@@ -24,15 +24,15 @@ public class SpringSecurityConfig {
     }
 
 	
-//	@Bean
-//    SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-//
-//        http.csrf().disable()
-//                .authorizeHttpRequests((authorize) -> {
-//                    authorize.anyRequest().authenticated();
-//                }).httpBasic(Customizer.withDefaults());
-//        return http.build();
-//    }
+	@Bean
+    SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+
+        http.csrf().disable()
+                .authorizeHttpRequests((authorize) -> {
+                    authorize.anyRequest().authenticated();
+                }).httpBasic(Customizer.withDefaults());
+        return http.build();
+    }
 	
 	@Bean
     public UserDetailsService userDetailsService(){
