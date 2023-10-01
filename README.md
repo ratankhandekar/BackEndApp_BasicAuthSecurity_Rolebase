@@ -1,0 +1,2 @@
+# MyAppSecurity
+ BasicAuth
