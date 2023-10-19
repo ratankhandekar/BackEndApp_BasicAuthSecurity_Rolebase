@@ -13,8 +13,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
-//configuration annnotation is a class level annotation, its tell IOC container to create bean as per this class source
-//Indicates that a class declares one or more @Bean methods and may be processed by the Spring container to generate bean definitions 
+//configuration annnotation is a class level annotation, its tell IOC container 
+to create bean as per this class source
+//Indicates that a class declares one or more @Bean methods and may be processed 
+	by the Spring container to generate bean definitions 
 @Configuration
 public class SpringSecurityConfig {
 	
